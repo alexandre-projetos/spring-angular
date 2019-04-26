@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="col-12 col-lg-2">
+        <app-menu-lateral-esquerdo></app-menu-lateral-esquerdo>
+    </div>
+
+    <div class="col-12 col-lg-10">
+        <header class="bg-light pt-4 pb-md-5 px-4 px-lg-5 d-flex d-md-block align-items-center title">
+            <h1 class="mb-4 mr-auto mr-md-none">
+                <ng-content select="[design-title]"></ng-content>
+            </h1>
+        </header>
+        <div>
+            <ng-content select="[design-body]"></ng-content>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -4,6 +4,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { UsuarioBuscaComponent } from './usuario/usuario-busca.component';
 import { AdminComponent } from './admin.component';
 import { UsuarioCadastroComponent } from './usuario/usuario-cadastro.component';
+import { DesignModule } from '../design/design.module';
 
 const COMPONENTS_EXPORT = [
   AdminComponent,
@@ -15,7 +16,8 @@ const COMPONENTS_EXPORT = [
   declarations: [COMPONENTS_EXPORT],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    DesignModule
   ],
   exports: [COMPONENTS_EXPORT]
 })
