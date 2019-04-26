@@ -14,6 +14,7 @@ Projeto modelo utilizando Spring Boot 2 + angular 7
 Na pasta src/webapp, executar o comando:
 
 ```
+npm install
 npm run build
 ```
 
