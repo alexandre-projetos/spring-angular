@@ -25,12 +25,8 @@
 }
 
 .avatar img {
-  width: 55px;
-  height: 55px;
-  border-radius: 100px;
+  height: 100%;
   margin: auto;
-  border: 3px solid #fff;
-  display: block;
 }
 
 .wrap input {
@@ -41,7 +37,7 @@
   display: block;
   height: 40px;
   outline: none;
-  width: calc(100% - 24px);
+  width: calc(100%);
   margin: auto;
   padding: 6px 12px 6px 12px;
 }
