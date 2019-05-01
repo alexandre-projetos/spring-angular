@@ -1,19 +1,29 @@
 <nav class="toc py-3">
-  <div class="toc-item"><a class="toc-link" routerlink="/" href="#/">Home</a></div>
-  <div class="toc-item"><a class="toc-link" routerlink="/getting-started" href="#/getting-started">Getting Started</a>
+
+  <div class="toc-item pb-2">
+    <a class="toc-link" routerlink="/" href="#/">Principal</a>
   </div>
-  <div class="toc-item active">
-    <a class="toc-link" href="#/components">Adminstração</a>
+
+  <div class="toc-item pb-2">
+    <a class="toc-link" routerLink="/admin">Administração</a>
+
     <ul class="nav flex-column">
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a class="toc-link" routerLink="/admin/">Principal</a>
       </li>
+
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a class="toc-link" routerLink="/admin/usuarios">Usuários</a>
       </li>
+
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a class="toc-link" routerLink="/admin/configuracoes">Configurações</a>
       </li>
     </ul>
   </div>
+
+  <div class="toc-item pb-2">
+    <a class="toc-link" routerlink="/getting-started" href="#/getting-started">Configurações</a>
+  </div>
+
 </nav>
