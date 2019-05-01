@@ -3,15 +3,15 @@
   <div class="toc-item"><a class="toc-link" routerlink="/getting-started" href="#/getting-started">Getting Started</a>
   </div>
   <div class="toc-item active">
-    <a class="toc-link" href="#/components">Admin</a>
+    <a class="toc-link" href="#/components">Adminstração</a>
     <ul class="nav flex-column">
-        <li>
-            <a class="toc-link" routerLink="/admin">Principal</a>
-          </li>      
-      <li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="toc-link" routerLink="/admin/">Principal</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a class="toc-link" routerLink="/admin/usuarios">Usuários</a>
       </li>
-      <li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a class="toc-link" routerLink="/admin/configuracoes">Configurações</a>
       </li>
     </ul>
