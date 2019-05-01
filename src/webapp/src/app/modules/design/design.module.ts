@@ -1,23 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuLateralEsquerdoComponent } from './menu-lateral-esquerdo/menu-lateral-esquerdo.component';
 import { DesignComponent } from './design.component';
-import { BodyComponent } from './body/body.component';
+import { DesignRoutingModule } from './design.routing.module';
 
 const COMPONENTS_EXPORT = [
     HeaderComponent,
     MenuLateralEsquerdoComponent,
-    BodyComponent,
-    FooterComponent,
     DesignComponent
 ];
 
 @NgModule({
     declarations: [COMPONENTS_EXPORT],
     imports: [
-        CommonModule
+        CommonModule,
+        DesignRoutingModule
     ],
     exports: [COMPONENTS_EXPORT]
 })

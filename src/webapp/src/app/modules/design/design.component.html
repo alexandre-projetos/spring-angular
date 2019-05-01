@@ -2,14 +2,24 @@
 
 <div class="container-fluid">
 
-    <div class="row h-auto" style="min-height: calc(89vh) !important">
+    <div class="row h-auto" style="min-height: 88vh!important">
 
         <div class="col-12 col-lg-2">
             <app-menu-lateral-esquerdo></app-menu-lateral-esquerdo>
         </div>
 
         <div class="col-12 col-lg-10 p-0" style="border-left: 1px solid rgba(0, 0, 0, 0.1)">
-            <app-body></app-body>
+
+            <header class="bg-light pt-4 pb-md-1 px-lg-4">
+                <h1 class="mb-1 mr-auto mr-md-none">
+                    <ng-content select="[design-title]"></ng-content>
+                </h1>
+            </header>
+
+            <section class="pt-4 pb-md-1 px-lg-4">
+                <ng-content select="[design-body]"></ng-content>
+            </section>
+
         </div>
 
     </div>
