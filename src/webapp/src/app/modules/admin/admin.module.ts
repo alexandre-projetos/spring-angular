@@ -5,11 +5,15 @@ import { UsuarioBuscaComponent } from './usuario/usuario-busca.component';
 import { AdminComponent } from './admin.component';
 import { UsuarioCadastroComponent } from './usuario/usuario-cadastro.component';
 import { DesignModule } from '../design/design.module';
+import { PrincipalComponent } from './principal/principal.component';
+import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 
 const COMPONENTS_EXPORT = [
   AdminComponent,
   UsuarioBuscaComponent,
-  UsuarioCadastroComponent
+  UsuarioCadastroComponent,
+  PrincipalComponent,
+  ConfiguracoesComponent
 ];
 
 @NgModule({
