@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: './modules/admin/admin.module#AdminModule'
   },
+  {
+    path: 'site',
+    loadChildren: './modules/site/site.module#SiteModule'
+  },
   { path: '**', redirectTo: '/login', pathMatch: 'full' } // Default page
 ];
 
