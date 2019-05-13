@@ -3,8 +3,8 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'login',
-    loadChildren: './modules/login/login.module#LoginModule'
+    path: 'site',
+    loadChildren: './modules/site/site.module#SiteModule'
   },
   {
     path: 'admin',
@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'site',
     loadChildren: './modules/site/site.module#SiteModule'
   },
-  { path: '**', redirectTo: '/login', pathMatch: 'full' } // Default page
+  { path: '**', redirectTo: '/site', pathMatch: 'full' } // Default page
 ];
 
 @NgModule({
